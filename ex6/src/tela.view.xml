@@ -1,10 +1,10 @@
 <mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" >
-	<HBox>
+	<VBox>
 		<items>
 			<Label text="Idioma" />
 			<Input enabled="false" />
 			<CheckBox text="RTL" />
-			<BarcodeScannerButton  />
+			<ndc:BarcodeScannerButton xmlns:ndc="sap.ndc"/>
 		</items>
-	</HBox>
+	</VBox>
 </mvc:View>
