@@ -51,13 +51,11 @@
 						</f:content>
 					</f:SimpleForm>
 				</content>
-				<Footer>
 					<Bar>
-						<right>
+						<contentRight>
 							<Button text="Salvar" type="Emphasized" />
-						</right>
+						</contentRight>
 					</Bar>
-				</Footer>
 			</Page>
 		</pages>
 	</App>
