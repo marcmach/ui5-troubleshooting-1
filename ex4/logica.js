@@ -25,7 +25,7 @@ function desenhaTela() {
 	oCheckbox.placeAt("container_checkbox");
 
 	var aTemas = ["sap_bluecrystal", "sap_belize", "sapfiori3", ];
-	for (var i = 1; i <= aTemas.length; i++) {
+	for (var i = 0; i < aTemas.length; i++) {
 		var sTema = aTemas[i];
 		
 		new sap.m.RadioButton({
@@ -47,6 +47,6 @@ function onPressButton(oInformacoesDoEvento) {
 
 function mudarTema(oInformacoesDoEvento){
 	var oRadioButtonSelecionado = oInformacoesDoEvento.getSource();
-	var sTema = oRadioButtonSelecionado.setText(); // pega o nome do tema
+	var sTema = oRadioButtonSelecionado.getText(); // pega o nome do tema
 	sap.ui.getCore().applyTheme(sTema);
 }
