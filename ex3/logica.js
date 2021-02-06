@@ -1,17 +1,17 @@
 function desenhaTela() {
 
-	var oLabel = new sap.m.label();
+	var oLabel = new sap.m.Label();
 	oLabel.setText("Idioma"); // TODO: encontrar documentação deste metodo na documentação
 	oLabel.placeAt("container_label");
 
 	var oInput = new sap.m.Input;
 	var sLanguage = sap.ui.getCore().getConfiguration().getLanguage(); // TODO: encontrar documentação deste metodo na documentação
 	oInput.setValue(sLanguage); // TODO: encontrar documentação deste metodo na documentação
-	oInput.set_Enabled(false);
+	oInput.setEnabled(false);
 	oInput.placeAt("container_input");
 
 	// TODO: ler a documentação do 'constructor' da classe abaixo
-	var oCheckbox = new sap.m.Checkbox({
+	var oCheckbox = new sap.m.CheckBox({
 		text: "Right To Left", // Texto inicial
 		selected: false,
 		select: function (oControlEvent) {
@@ -19,7 +19,7 @@ function desenhaTela() {
 			var bSelected = oParameters.selected;
 			sap.ui.getCore().getConfiguration().setRTL(bSelected);
 		}
-	});
+    });
 	oCheckbox.setText("RTL"); // Texto alterado em tempo de execução
 	oCheckbox.placeAt("container_checkbox");
 
