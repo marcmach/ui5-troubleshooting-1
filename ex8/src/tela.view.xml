@@ -1,4 +1,4 @@
-<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ovly.logica">
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.ui.layout.form" xmlns:c="sap.ui.core" controllerName="ovly.logica">
 	<f:SimpleForm 
 		editable="true"
 		layout="ResponsiveGridLayout"
@@ -15,7 +15,7 @@
 		columnsXL="1"
 		columnsL="1"
 		columnsM="1"
-		singleContainerFullSize="false" >
+		singleContainerFullSize="false">
 		<f:content>
 			<Label text="Nome" />
 			<Input placeholder="ex: O pequeno príncipe" />
@@ -26,17 +26,17 @@
 			<Label text="Avaliação" />
 			<RatingIndicator />
 			<Label text="Disponível" />
-			<Switch customTextOn="Sim" customTextOn="Não" />
+			<Switch customTextOff="Não" />
 			<Label text="Categoria" />
 			<Select >
 				<items>
-					<Item key="1" text="Infantil" />
-					<Item key="2" text="Ficção" />
-					<Item key="3" text="Biografia" />
+					<c:Item key="1" text="Infantil" />
+					<c:Item key="2" text="Ficção" />
+					<c:Item key="3" text="Biografia" />
 				</items>
 			</Select>
 			<Label text="Lançado em" />
-			<DatePicker />
+			<DatePicker value="20/05/2020"/>
 			<Label />
 			<Button text="Salvar" type="Emphasized" />
 		</f:content>
