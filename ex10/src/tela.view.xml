@@ -3,7 +3,8 @@
 	height="100%"
 	controllerName="ovly.logica"
 	xmlns:mvc="sap.ui.core.mvc" 
-	xmlns="sap.f" 
+	xmlns:f="sap.f" 
+    xmlns="sap.m"   
 	>
 	<App>
 		<pages>
@@ -11,7 +12,7 @@
 				<content>
 					<GenericTile header="Bootstraping com CDN" subheader="Exercício 1" class="sapUiSmallMargin" press="ex1" />
 					<GenericTile header="Bootstraping com neo-app.json" subheader="Exercício 2" class="sapUiSmallMargin" press="ex2" />
-					<GenericTile header="Controles com JS" subheader="Exercício 3" class="sapUiSmallMargin" press="ex3 />
+					<GenericTile header="Controles com JS" subheader="Exercício 3" class="sapUiSmallMargin" press="ex3" />
 					<!--
 						Completar
 					-->
@@ -19,7 +20,7 @@
 				<footer>
 					<Toolbar>
 						<content>
-							<ToolbarSpacerr />
+							<ToolbarSpacer />
 							<Button text="GitHub" type="Emphasized" press="onOpenGitHub" />
 						</content>
 					</Toolbar>
